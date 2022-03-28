@@ -1,0 +1,62 @@
+<html>
+
+<head>
+    <style> 
+#myDIV {
+  
+  background: red;
+    background-size: cover;
+    background-repeat:no-repeat;
+    width: auto;
+    height: auto;
+  animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+  from {background-color: red;}
+  to {background-color: blue;}
+}
+</style>
+    <script type="text/javascript">
+        function effect()
+        {
+            var x=document.getElementById("effect1");
+            x.style.backgroundColor="00FF00";
+             }
+        function effectback()
+        {
+        var x=document.getElementById("effect1");
+        x.style.backgroundColor="white";
+            }
+       
+    </script>
+   
+
+<body>
+    <div id="myDIV"> <h1 >CREATED   BY  <I>K.K</I></h1>
+   
+    <h1>
+        <I id="effect1" onmouseover="effect()" onmouseout="effectback()">Today Date AND time is</I>
+    </h1>
+
+    <p id="p1"></p>
+        <p id="p2"></p>
+    
+    <script type="text/javascript">
+        var today = new Date();
+
+        var date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
+
+        var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+
+        var dateTime = date + ' ' + time;
+        document.getElementById("p1").innerHTML = dateTime;
+    </script>
+        </div>
+   
+
+   
+
+</body>
+
+</html>

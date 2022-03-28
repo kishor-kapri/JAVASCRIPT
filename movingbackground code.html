@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+#myDIV {
+  width: 1000px;
+  height: 1000px;
+  background: pink;
+  animation: mymove 8s infinite;
+}
+
+@keyframes mymove {
+  from {background-color: pink;}
+  to {background-color: mediumspringgreen;}
+}
+</style>
+    <script type="text/javascript">
+    function kishor()
+        {
+            var x=document.getElementById("myself");
+            x.style.backgroundColor="pink";
+            }
+        function kishorback()
+        {
+        var x=document.getElementById("myself");
+         x.style.backgroundColor="red";
+            }
+        function kishor1()
+        {
+            var x=document.getElementById("yoo");
+            x.style.backgroundColor="00FF00";
+            }
+        function kishor1back()
+        {
+            var x=document.getElementById("yoo");
+             x.style.backgroundColor="lightblue";
+             }
+ </script>
+</head>
+<body>
+<div id="myDIV"><h1 id="myself" onmouseover="kishor() " onmouseout="kishorback() "><center>HI THIS IS KISHOR </center></h1>
+   <i id="yoo" onmouseover="kishor1 " onmouseout="kishor1back ">I have completed my 12th from Mallikarnjun school pithoragarh, and currently i am persuing BCA from SIDDHARTHA DEGREE COLLEGE
+   </i>  </div>
+
+
+
+</body>
+</html>
